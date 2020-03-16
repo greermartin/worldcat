@@ -1,2 +1,14 @@
 # worldcat
-Scripts for WorldCat APIs
+Scripts to count number of libraries holding a title for a given OCLC number using the WorldCat Search API. 
+
+Lookup by OCLC number URL request documentation here: https://www.oclc.org/developer/develop/web-services/worldcat-search-api/library-locations.en.html
+
+## What does it do?
+Each script takes a CSV with OCLC numbers, finds library holdings for each OCLC number up to 100 libraries, counts the number of libraries, and outputs a new CSV with an appended column containig the library count. 
+
+One script counts holdings in US, another script counts holdings in IL. 
+
+## What are the requirements?
+* Input CSV must be named batch.csv
+* One OCLC number per row
+* OCLC number must be in column labeled "OCLC Number"
