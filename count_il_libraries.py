@@ -41,7 +41,7 @@ with open("batch.csv", "r") as infile, \
     writer.writeheader()
     
 # get oclc number from infile, add library count, save all to outfile
-for title in reader:
+    for title in reader:
         oclcNo = title['OCLC Number']
         printLibraries = get_libraries(oclcNo, my_key)
         title['IL_COUNT'] = printLibraries
