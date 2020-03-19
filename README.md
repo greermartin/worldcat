@@ -10,7 +10,8 @@ One script counts holdings in US, another script counts holdings in IL.
 
 ## What are the requirements?
 * Requires WorldCat institution authentication key
-* Store key in file named worldcat_auth.txt in same directory as input csv
+* Store key in file named worldcat_auth.txt
 * Input csv must be named batch.csv
+* Python file, batch.csv, and worldcat_auth.txt must be in same directory
 * One OCLC number per row
 * OCLC number must be in column labeled "OCLC Number" (no quotes)
