@@ -1,7 +1,7 @@
 # worldcat
 Scripts to count number of libraries holding a title for a given OCLC number using the WorldCat Search API. 
 
-Lookup by OCLC number URL request documentation here: https://developer.api.oclc.org/wcv2
+Lookup by OCLC number URL request documentation here: https://developer.api.oclc.org/wcv1
 
 ## What does it do?
 Each script takes am inout csv with OCLC numbers, finds library holdings for each OCLC number up to 100 libraries, counts the number of libraries, and outputs a new csv with an appended column containig the library count. FRBR Grouping is on or off, according to the filename (count_us_libraries_frbrOn.py = FRBR Grouping set to "on");
